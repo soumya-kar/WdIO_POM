@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1591544828360' stop='1591544834285'>
+    <name>Log in Test</name>
+    <title>Log in Test</title>
+    <test-cases>
+        <test-case start='1591544828360' status='broken' stop='1591544834283'>
+            <name>Verify page title</name>
+            <title>Verify page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1591544828431' status='passed' stop='1591544832495'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8e0137d3-cc75-475a-ae91-f1d02db88eba-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591544832496' status='passed' stop='1591544833634'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='7c27d292-878f-4c69-a43d-ff7eadac2467-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591544833636' status='passed' stop='1591544834281'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='467eba5a-4ad1-40e5-8bec-ce2bbb2ee040-attachment.png' type='image/png' size='39772'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>browser.getPageTitle is not a function</message>
+                <stack-trace>TypeError: browser.getPageTitle is not a function
+                    at ElementUtil.getPageTitle (C:\Users\Asus\Documents\WdIO_POM\util\elementUtil.js:24:24)
+                    at LoginPage.getPageTitle (C:\Users\Asus\Documents\WdIO_POM\pages\login.page.js:13:25)
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WdIO_POM\test\loginTest.js:6:29)
+                    at Context.executeSync (C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

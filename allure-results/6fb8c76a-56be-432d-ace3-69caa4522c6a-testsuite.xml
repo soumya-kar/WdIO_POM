@@ -1,0 +1,104 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1591547775133' stop='1591547779940'>
+    <name>Log in Test</name>
+    <title>Log in Test</title>
+    <test-cases>
+        <test-case start='1591547775133' status='broken' stop='1591547777481'>
+            <name>Verify sign up link exists on Log in page</name>
+            <title>Verify sign up link exists on Log in page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1591547775201' status='passed' stop='1591547776982'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b6949f1a-3fe1-4e7c-8d0d-217119ee79be-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591547776986' status='passed' stop='1591547777060'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ee90c99a-8a4d-4282-8d77-168bdee14872-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='98be25bb-b2db-40e4-8cb2-0cf46c1f3553-attachment.json' type='application/json' size='286'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591547777087' status='passed' stop='1591547777476'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='da86a84c-c841-489b-8290-44fb4756128d-attachment.png' type='image/png' size='4705'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>waitTime is not defined</message>
+                <stack-trace>ReferenceError: waitTime is not defined
+                    at ElementUtil.waitForElementToDisplay (C:\Users\Asus\Documents\WdIO_POM\util\elementUtil.js:30:34)
+                    at LoginPage.isSignUpPageExist (C:\Users\Asus\Documents\WdIO_POM\pages\login.page.js:17:18)
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WdIO_POM\test\loginTest.js:6:31)
+                    at Context.executeSync (C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1591547777483' status='broken' stop='1591547779938'>
+            <name>Verify page title</name>
+            <title>Verify page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1591547777487' status='passed' stop='1591547778424'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='73f48618-afaf-4b50-ba70-219952e60a42-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591547778424' status='passed' stop='1591547779568'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='e412fd46-77a3-4dba-8468-ec9cb6092e5e-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591547779569' status='passed' stop='1591547779938'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a37f9c88-cbed-4d2b-aa60-8ed6ae0fa29b-attachment.png' type='image/png' size='40035'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>browser.getPageTitle is not a function</message>
+                <stack-trace>TypeError: browser.getPageTitle is not a function
+                    at ElementUtil.getPageTitle (C:\Users\Asus\Documents\WdIO_POM\util\elementUtil.js:26:24)
+                    at LoginPage.getPageTitle (C:\Users\Asus\Documents\WdIO_POM\pages\login.page.js:13:25)
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WdIO_POM\test\loginTest.js:12:29)
+                    at Context.executeSync (C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

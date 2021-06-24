@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1591552812862' stop='1591552918895'>
+    <name>Log in Test</name>
+    <title>Log in Test</title>
+    <test-cases>
+        <test-case start='1591552812862' status='broken' stop='1591552858887'>
+            <name>Verify page title</name>
+            <title>Verify page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.17134'/>
+            </parameters>
+            <steps>
+                <step start='1591552812948' status='broken' stop='1591552858887'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1591552857126' status='broken' stop='1591552858887'>
+                            <name>undefined undefined</name>
+                            <title>undefined undefined</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>net::ERR_CONNECTION_TIMED_OUT at https://app.hubspot.com/</message>
+                <stack-trace>net::ERR_CONNECTION_TIMED_OUT at https://app.hubspot.com/
+                    at Frame.&lt;anonymous> (C:\Users\Asus\Documents\WdIO_POM\node_modules\puppeteer-core\lib\helper.js:94:19)
+                    at Page.goto (C:\Users\Asus\Documents\WdIO_POM\node_modules\puppeteer-core\lib\Page.js:485:53)
+                    at Page.&lt;anonymous> (C:\Users\Asus\Documents\WdIO_POM\node_modules\puppeteer-core\lib\helper.js:95:27)
+                    at DevToolsDriver.navigateTo (C:\Users\Asus\Documents\WdIO_POM\node_modules\devtools\build\commands\navigateTo.js:13:14)
+                    at Browser.wrappedCommand (C:\Users\Asus\Documents\WdIO_POM\node_modules\devtools\build\devtoolsdriver.js:92:47)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async Browser.runCommandWithHooks (C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Browser.runCommandWithHooks (C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Browser.wrapCommandFn (C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WdIO_POM\test\loginTest.js:5:17)
+                    at Context.executeSync (C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1591552858889' status='broken' stop='1591552918893'>
+            <name>Verify sign up link exists on Log in page</name>
+            <title>Verify sign up link exists on Log in page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.17134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "Log in Test Verify sign up link exists on Log in page" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\Asus\Documents\WdIO_POM\test\loginTest.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "Log in Test Verify sign up link exists on Log in page" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\Asus\Documents\WdIO_POM\test\loginTest.js)
+                    at Test.Runnable._timeoutError (C:\Users\Asus\Documents\WdIO_POM\node_modules\mocha\lib\runnable.js:442:10)
+                    at Timeout.&lt;anonymous> (C:\Users\Asus\Documents\WdIO_POM\node_modules\mocha\lib\runnable.js:252:24)
+                    at listOnTimeout (internal/timers.js:549:17)
+                    at processTimers (internal/timers.js:492:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

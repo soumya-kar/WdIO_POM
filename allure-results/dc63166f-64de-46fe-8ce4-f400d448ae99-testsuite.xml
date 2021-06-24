@@ -1,0 +1,177 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1591731526998' stop='1591731546733'>
+    <name>Log in Test</name>
+    <title>Log in Test</title>
+    <test-cases>
+        <test-case start='1591731526998' status='passed' stop='1591731545713'>
+            <name>Verify page title</name>
+            <title>Verify page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1591731527081' status='passed' stop='1591731529518'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='422448b2-a1a6-4a1b-85f7-42e251855055-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591731529519' status='passed' stop='1591731530670'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='22fa55b6-36f4-464e-a94c-261e78b782b6-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591731545672' status='passed' stop='1591731545710'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='812fb069-f97c-48f7-9467-50f078224abd-attachment.json' type='application/json' size='15'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1591731545714' status='passed' stop='1591731545908'>
+            <name>Verify sign up link exists on Log in page</name>
+            <title>Verify sign up link exists on Log in page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1591731545719' status='passed' stop='1591731545769'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f530b4c2-c1dd-4588-924b-c256a2708d35-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='74400322-bdac-4fcf-8eda-ef33ce937628-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591731545791' status='passed' stop='1591731545834'>
+                    <name>GET /session/:sessionId/element/0.3792498603662462-1/displayed</name>
+                    <title>GET /session/:sessionId/element/0.3792498603662462-1/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='6389f597-3581-4bb8-a43d-5251c4adfb04-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591731545835' status='passed' stop='1591731545870'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7819d7f1-781f-437e-8170-fb7737f92cee-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='75ce7df2-d85b-445f-96b1-49d198e33b3d-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591731545878' status='passed' stop='1591731545907'>
+                    <name>GET /session/:sessionId/element/0.3792498603662462-1/displayed</name>
+                    <title>GET /session/:sessionId/element/0.3792498603662462-1/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='9dc8c420-f90a-4c25-bf22-49f5a6d91ede-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1591731545908' status='broken' stop='1591731546347'>
+            <name>Verify invalid log in</name>
+            <title>Verify invalid log in</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1591731545910' status='passed' stop='1591731545954'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='94f7a1ae-bd9a-4376-9ad7-ea59c60d9b91-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='7f2f0eca-6da8-4053-98cf-fc0043775a0e-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591731545965' status='passed' stop='1591731546344'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='689c0175-da1b-4063-8b7a-f19a582dcfee-attachment.png' type='image/png' size='22532'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element.clear is not a function</message>
+                <stack-trace>TypeError: element.clear is not a function
+                    at ElementUtil.doClearAndSetValue (C:\Users\Asus\Documents\WdIO_POM\util\elementUtil.js:13:17)
+                    at LoginPage.doLogin (C:\Users\Asus\Documents\WdIO_POM\pages\login.page.js:23:17)
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WdIO_POM\test\loginTest.js:19:18)
+                    at Context.executeSync (C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1591731546348' status='broken' stop='1591731546732'>
+            <name>Verify valid log in</name>
+            <title>Verify valid log in</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1591731546350' status='passed' stop='1591731546377'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e66fdbdf-70dc-4ecb-8fb0-a91307c31cfb-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='b6d02498-0b0c-4e73-baaa-a6fedbf62fb4-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591731546388' status='passed' stop='1591731546731'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='62d9a9eb-32b2-426b-aef8-f0c9909c1e38-attachment.png' type='image/png' size='22549'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element.clear is not a function</message>
+                <stack-trace>TypeError: element.clear is not a function
+                    at ElementUtil.doClearAndSetValue (C:\Users\Asus\Documents\WdIO_POM\util\elementUtil.js:13:17)
+                    at LoginPage.doLogin (C:\Users\Asus\Documents\WdIO_POM\pages\login.page.js:23:17)
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WdIO_POM\test\loginTest.js:24:19)
+                    at Context.executeSync (C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WdIO_POM\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
